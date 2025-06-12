@@ -63,7 +63,6 @@ select {
 button {
     background-color: #e51f1c;
     border-radius: 1vh;
-    border: 0;
     color: white;
     cursor: pointer;
     font-size: large;

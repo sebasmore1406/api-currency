@@ -764,6 +764,8 @@ function convertCurrency() {
         return response.json()
     }).then(data => {
         html.output.innerHTML = `<p>${data.amount.toLocaleString('es-MX', {maximumFractionDigits: 2, minimumFractionDigits: 2})} ${data.from} es igual a ${data.result.toLocaleString('es-MX', {maximumFractionDigits: 2, minimumFractionDigits: 2})} ${data.to}</p>`;
+    }).catch(error => {
+        html.output.html = error.message
     })
 }
 
